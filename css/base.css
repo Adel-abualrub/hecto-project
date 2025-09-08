@@ -5,7 +5,9 @@ box-sizing: border-box;
 }
 
 :root{
---MainColor : #FB2E86;
+
+--MainColor :#0D0E43 ;
+--SecondaryColor:#FB2E86;
 --MainFont: "Lato", sans-serif;
 }
 .container{
@@ -32,11 +34,7 @@ color: white;
 background-color: var(--MainColor);
 padding : 16px 40px;
 }
-.btn:hover{
 
-    background-color: #724759;
-    transition: 1s;
-}
 nav ul{
     
     display: flex;
@@ -49,25 +47,41 @@ li{
 li a{
     text-decoration: none;
 }
-.search form{
-    border: 3px solid var(--MainColor);
-    
+li a{
+color: var(--MainColor);
+
 }
-.search input{
-border: none;
-outline: none;
-padding: 10px 0px;
+li a.Home{
+    color: var(--SecondaryColor);
 }
-.search button{
+.SearchImg{
+
+background-color: var(--SecondaryColor);
+
+}
+.d-flex{
+display: flex;
+}
+.align-c{
+align-items: center;
+}
+.space-between{
+justify-content: space-between;
+}
+.Search-Box{
     border: none;
 outline: none;
 
 }
-.search-par{
-    padding: 12px;
-background-color: var(--MainColor);
+.padding-top1{
+    padding-top: 5px ;
 }
-
-
-
-
+.padding-top2{
+    padding-top: 10px ;
+}
+.padding-top3{
+    padding-top: 15px ;
+}
+.padding-top-button-8px{
+    padding: 8px 4px ;
+}
