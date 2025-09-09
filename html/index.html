@@ -8,7 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <!--search link-->
+ <!--menu-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+<!--search link-->
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Base css-->
 <link rel="stylesheet" href="./../css/base.css">
@@ -24,7 +27,10 @@
 
     
 <div class="logo"> <img src="./../img/Hekto.svg" alt=""></div>
-<nav><ul>
+<nav>
+    <i class="fa-solid fa-bars menu"></i>
+    
+    <ul class="nav-list">
 
 <li><a href="#" class="Home">Home</a> <img src="./../img/akar.png" alt=""> </li>
 <li><a href="#"class="Pages">Pages</a></li>
@@ -44,7 +50,73 @@
 
 <!-- end header-->
  <!--start footer-->
- 
+ <footer>
+    <div class="container">
+<div class="row align-left ">
+
+<div class="d-flex flex-col gap30px align-start">
+<img src="./../img/Hekto.svg" alt="hecto logo" class="H-logo">
+<form class="d-flex flex-col align-start" >
+<div class="search d-flex  align-start ">
+<input type="text" placeholder="enter your email address..." class="sign-up-Box">
+<button class="SearchImg padding-top-button-8px">
+    Sign up
+</button>
+</div>
+</form>
+<div class="contact">
+<h2>Contact Info</h2>
+<address>17 Princess Road, London, Greater London NW1 8JR, UK</address>
+</div>
+
+
+
+
+</div>
+<!-- Right Side -->
+<div class="right-side d-flex space-between">
+
+  <!-- Categories -->
+  <div class="d-flex flex-col gap30px align-start">
+    <h2>Categories</h2>
+    <ul class="d-flex flex-col gap30px align-start">
+      <li><a href="#">Laptops & Computers</a></li>
+      <li><a href="#">Cameras & Photography</a></li>
+      <li><a href="#">Smart Phones & Tablets</a></li>
+      <li><a href="#">Video Games & Consoles</a></li>
+      <li><a href="#">Waterproof Headphones</a></li>
+    </ul>
+  </div>
+
+  <!-- Customer Care -->
+  <div class="d-flex flex-col gap30px align-start">
+    <h2>Customer Care</h2>
+    <ul class="d-flex flex-col gap30px align-start">
+      <li><a href="#">My Account</a></li>
+      <li><a href="#">Discount</a></li>
+      <li><a href="#">Returns</a></li>
+      <li><a href="#">Orders History</a></li>
+      <li><a href="#">Order Tracking</a></li>
+    </ul>
+  </div>
+
+  <!-- Pages -->
+  <div class="d-flex flex-col gap30px align-start">
+    <h2>Pages</h2>
+    <ul class="d-flex flex-col gap30px align-start">
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Browse the Shop</a></li>
+      <li><a href="#">Category</a></li>
+      <li><a href="#">Pre-Built Pages</a></li>
+      <li><a href="#">Visual Composer Elements</a></li>
+      <li><a href="#">WooCommerce Pages</a></li>
+    </ul>
+  </div>
+
+</div> <!-- End right-side -->
+
+    </div>
+ </footer>
 
 
 </body>
