@@ -24,8 +24,33 @@ footer ul li a {
   font-size: 14px;
 
 }
+.newsletter{
+  background-image: url(./../img/Rectangle\ 102.png);
+  padding: 150px 0px;
+  
+}
+.newsletter h2{
+color: #151875;
 
+}
+.newsletter .btn{
+  background-color: var(--SecondaryColor);
+}
+.newsletter a{
+  color: #E7E6EF;
+text-decoration: none;
 
+}
+.newsletter .btn{
+  
+  transition: .5s;
+ border-radius: 11px;
+}
+.newsletter .btn:hover{
+ background-color: var(--MainColor);
+ transform: scale(1.2);
+}
 .right-side {
   gap: 60px; 
 }
+

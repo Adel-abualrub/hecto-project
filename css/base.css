@@ -36,6 +36,7 @@ header{
 color: white;
 background-color: var(--MainColor);
 padding : 16px 40px;
+display: inline-block;
 }
 
 nav ul{
@@ -57,6 +58,7 @@ color: var(--MainColor);
 li a.Home{
     color: var(--SecondaryColor);
 }
+
 .SearchImg{
 
 background-color: var(--SecondaryColor);
