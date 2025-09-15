@@ -52,8 +52,11 @@ height: 200px;
   flex-direction: column;
   gap: 15px;
 }
-.product h2{
-  
+.product h3{
+color: var(--SecondaryColor);  
+}
+.product span{
+  color: var(--MainColor);
 }
 /*end featured products*/
 

@@ -96,6 +96,9 @@ outline: none;
 .padding-top3{
     padding-top: 15px ;
 }
+.padding-top40px{
+    padding-top: 40px;
+}
 .gap30px{
     gap: 30px;
 }
@@ -136,4 +139,7 @@ text-align: center;
 }
 .text-left{
     text-align: left;
+}
+.padding-buttom{
+    padding-bottom: 5px;
 }
