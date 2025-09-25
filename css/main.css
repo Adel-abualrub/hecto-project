@@ -92,3 +92,46 @@ text-decoration: none;
   gap: 60px; 
 }
 
+ .footer nav a{
+  color: #8A8FB9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover{
+  color: #151875;
+ 
+}
+.right-side{
+  
+   width: calc((100% -30) / 2);
+}
+.footer .left-side img{
+  display: block;       
+  margin-left: 0;
+ 
+  width: calc((100% -30) / 2);
+}
+.footer .right-side .row{
+  gap :45px;
+}
+.footer .item{
+  width : calc((100% -90) / 2);
+}
+.footer .img{
+  align-items: start;
+}
+@media screen and (max-width : 992px){
+  .footer .row{
+    flex-direction: column;
+  
+  }
+  .left-side{
+    width: 100%;
+    
+  }
+  .right-side{
+    width: 100%;
+  }
+  
+}

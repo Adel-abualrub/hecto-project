@@ -11,8 +11,24 @@ box-sizing: border-box;
 --MainFont: "Lato", sans-serif;
 }
 .container{
-width: calc(100% - 220px);
+width: calc(100% - 320px);
 margin:auto;
+}
+ 
+@media screen and (max-width: 1400px) {
+    .container{
+        width: calc(100% - 220px);
+    }
+}
+@media screen and (max-width: 992px) {
+    .container{
+        width: calc(100% - 100px);
+    }
+}
+@media screen and (max-width: 576px) {
+    .container{
+        width: calc(100% - 40px);
+    }
 }
 header{
     font-family: var(--MainFont);
@@ -29,16 +45,35 @@ header{
     justify-content: space-between;
     text-align: center;
 }
+.footer .row{
+    gap :30px;
+}
 .btn{
     font-family: var(--MainFont);
     border: none;
     outline: none;
 color: white;
-background-color: var(--MainColor);
+background-color: var(--SecondaryColor);
 padding : 16px 40px;
 display: inline-block;
 }
-
+.btn-footer{
+    font-family: var(--MainFont);
+    border: none;
+    outline: none;
+color: white;
+background-color: var(--SecondaryColor);
+padding : 10px 30px;
+display: inline-block;
+border-radius: 10px;
+border: 3px;
+}
+.sign-up-box{
+    border: none;
+    outline: none;
+    padding: 10px;
+    
+}
 nav ul{
     
     display: flex;
@@ -67,6 +102,9 @@ background-color: var(--SecondaryColor);
 .d-flex{
 display: flex;
 }
+.flex-col{
+    flex-direction: column;
+}
 .align-c{
 align-items: center;
 }
@@ -87,6 +125,7 @@ justify-content: space-between;
 outline: none;
 
 }
+
 .padding-top1{
     padding-top: 5px ;
 }
@@ -98,6 +137,9 @@ outline: none;
 }
 .padding-top40px{
     padding-top: 40px;
+}
+.gap10px{
+    gap: 10px;
 }
 .gap30px{
     gap: 30px;
