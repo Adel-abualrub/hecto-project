@@ -185,3 +185,9 @@ text-align: center;
 .padding-buttom{
     padding-bottom: 5px;
 }
+.position-absolute{
+    position: absolute;
+}
+.position-relative{
+    position: relative;
+}

@@ -51,6 +51,7 @@ height: 200px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  transition: .8s;
 }
 .product h3{
 color: var(--SecondaryColor);  
@@ -58,6 +59,95 @@ color: var(--SecondaryColor);
 .product span{
   color: var(--MainColor);
 }
+.color{
+  width: 14px;
+  height: 4px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.color-one {
+  background-color: #05E6B7;
+}
+
+.color-two {
+  background-color: #F701A8;
+}
+
+.color-three {
+  background-color: #FFEAC1;
+}
+.product-details h3{
+    transition: all 0.8 ;
+}
+.product-details span{
+    transition: all .8s;
+}
+.product .img{
+    transition: all .3s ease-in-out;
+  }
+.Hover-Button {
+  background-color: #00d563;  
+  color: #fff;               
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  /* مخفي مبدئيًا */
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  
+  
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  z-index: 1;
+}
+
+
+.product:hover .Hover-Button {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
+
+.product .Hover-Imgs{
+  top: 20px;
+  left: 10px;
+  z-index: 1;
+  
+    display: none;
+    
+   
+  }
+.product:hover .product-details{
+  background-color: #2F1AC4;
+ border-radius: 8px;
+}
+
+.product:hover .Hover-Imgs{
+  display: block;
+  
+}
+.product:hover  .product-details h3{
+  color: white;
+}
+.product:hover .product-details span{
+  color:  white;
+}
+
+.product:hover .img{
+ transform: scale(0.7);
+ background-color: white;
+}
+
 /*end featured products*/
 
 /* start newsletter*/
