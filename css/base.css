@@ -105,6 +105,12 @@ display: flex;
 .flex-col{
     flex-direction: column;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-content-center{
+    justify-content: center;
+}
 .align-c{
 align-items: center;
 }
