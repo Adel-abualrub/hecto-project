@@ -387,6 +387,116 @@ border-radius: 4px;
   
 }
 /*end top categores*/
+/*start leatset blog*/
+:root{
+  --primary:#151875;     /*紺*/
+  --accent:#FB2E86;      /* فوشيا مثل الصورة الوسط */
+  --muted:#8A8FB9;       /* رمادي مزرق للنصوص الثانوية */
+  --card-bg:#ffffff;
+  --card-shadow: 0 10px 25px rgba(21,24,117,0.08);
+  --card-shadow-hover: 0 16px 38px rgba(251,46,134,0.25);
+  --radius:14px;
+}
+
+/* section */
+.leatset-blogs{
+  padding: 50px 0 20px;
+  background:#fff;
+}
+.section-title{
+  text-align:center;
+  color:var(--primary);
+  margin-bottom:24px;
+}
+
+/* layout */
+.blogs-row{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:28px;
+}
+@media (max-width: 992px){
+  .blogs-row{ grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 640px){
+  .blogs-row{ grid-template-columns: 1fr; }
+}
+
+/* card */
+.blog-card{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  box-shadow: var(--card-shadow);
+  overflow:hidden;
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+
+/* image */
+.img-card{
+  height: 220px;
+  overflow:hidden;
+}
+.img-card img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+/* meta row */
+.meta{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  padding:14px 20px 0 20px;
+  color:var(--muted);
+  font-size:14px;
+}
+.meta-item{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+}
+.meta-item img{ width:16px; height:16px; }
+
+/* content */
+.blog-title{
+  color:var(--primary);
+  font-size:20px;
+  font-weight:700;
+  line-height:1.4;
+  padding:10px 20px 0 20px;
+  transition: color .3s ease;
+}
+.blog-summary{
+  color:var(--muted);
+  line-height:1.8;
+  padding:8px 20px 0 20px;
+}
+.read-more{
+  display:inline-block;
+  margin:14px 20px 22px 20px;
+  color:var(--primary);
+  text-decoration:none;
+  border-bottom:2px solid transparent;
+  transition: color .3s ease, border-color .3s ease;
+}
+
+/* HOVER = يتحول لشكل الكرت الأوسط */
+.blog-card:hover{
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-6px);
+}
+.blog-card:hover .blog-title{
+  color: var(--accent);
+}
+.blog-card:hover .read-more{
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 /* start newsletter*/
 
 .newsletter{
